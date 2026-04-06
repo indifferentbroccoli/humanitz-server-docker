@@ -1,7 +1,7 @@
 ---
 services:
   humanitz:
-    build: .
+    image: indifferentbroccoli/humanitz-server-docker
     platform: linux/amd64
     restart: unless-stopped
     container_name: humanitz
