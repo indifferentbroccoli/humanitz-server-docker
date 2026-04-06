@@ -34,7 +34,7 @@ Copy the `.env.example` file to a new file called `.env`. Then use either `docke
 ```yaml
 services:
   humanitz:
-    build: .
+    image: indifferentbroccoli/humanitz-server-docker
     restart: unless-stopped
     container_name: humanitz
     stop_grace_period: 30s
