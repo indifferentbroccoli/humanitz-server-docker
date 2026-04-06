@@ -60,7 +60,7 @@ shutdown_server() {
   LogAction "Attempting graceful server shutdown"
 
   local pid
-  pid=$(pgrep -f "TSSGameServer")
+  pid=$(pgrep -f "HumanitZServer-Linux-Shipping")
 
   if [ -n "$pid" ]; then
     kill -SIGTERM "$pid"

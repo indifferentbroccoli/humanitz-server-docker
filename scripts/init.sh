@@ -27,7 +27,7 @@ chown -R steam:steam /home/steam/server-files
 # shellcheck disable=SC2317
 term_handler() {
     if ! shutdown_server; then
-        kill -SIGTERM "$(pgrep -f TSSGameServer)"
+        kill -SIGTERM "$(pgrep -f HumanitZServer-Linux-Shipping)"
     fi
     tail --pid="$killpid" -f 2>/dev/null
 }

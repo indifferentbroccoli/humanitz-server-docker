@@ -48,6 +48,6 @@ RUN mkdir -p /home/steam/server-files && \
 WORKDIR /home/steam/server
 
 HEALTHCHECK --start-period=5m \
-            CMD pgrep -f "TSSGameServer" > /dev/null || exit 1
+            CMD pgrep -f "HumanitZServer-Linux-Shipping" > /dev/null || exit 1
 
 ENTRYPOINT ["/home/steam/server/init.sh"]
