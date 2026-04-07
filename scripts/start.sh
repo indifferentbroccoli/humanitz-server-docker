@@ -23,4 +23,5 @@ LogInfo "Server starting on port ${PORT} (UDP), query port ${QUERY_PORT} (UDP)"
 
 exec "$EXEC" \
     -port="${PORT}" \
-    -queryport="${QUERY_PORT}"
+    -queryport="${QUERY_PORT}" \
+    -steamservername="${STEAM_SERVER_NAME}"
