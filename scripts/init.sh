@@ -38,9 +38,6 @@ trap 'term_handler' SIGTERM
 su - steam -c "cd /home/steam/server && \
     PORT='${PORT}' \
     QUERY_PORT='${QUERY_PORT}' \
-    SERVER_NAME='${SERVER_NAME}' \
-    SERVER_PASSWORD='${SERVER_PASSWORD}' \
-    MAX_PLAYERS='${MAX_PLAYERS}' \
     ./start.sh" &
 
 killpid="$!"

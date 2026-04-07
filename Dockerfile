@@ -33,10 +33,7 @@ RUN useradd -m -s /bin/bash steam
 ENV HOME=/home/steam \
     PORT=7777 \
     QUERY_PORT=27015 \
-    UPDATE_ON_START=true \
-    SERVER_NAME="HumanitZ Server" \
-    SERVER_PASSWORD="" \
-    MAX_PLAYERS=16
+    UPDATE_ON_START=true
 
 COPY ./scripts /home/steam/server/
 

@@ -20,11 +20,7 @@ fi
 
 chmod +x "$EXEC"
 LogInfo "Server starting on port ${PORT} (UDP), query port ${QUERY_PORT} (UDP)"
-LogInfo "Server name: ${SERVER_NAME}"
 
 exec "$EXEC" \
     -port="${PORT}" \
-    -queryport="${QUERY_PORT}" \
-    -SteamServerName="${SERVER_NAME}" \
-    ${SERVER_PASSWORD:+-ServerPassword="${SERVER_PASSWORD}"} \
-    -MaxServerPlayers="${MAX_PLAYERS:-16}"
+    -queryport="${QUERY_PORT}"

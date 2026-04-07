@@ -69,19 +69,16 @@ docker run -d \
 
 ## Environment Variables
 
-| Variable        | Default         | Info |
-|-----------------|-----------------|------|
-| PUID            | 1000            | User ID for file permissions |
-| PGID            | 1000            | Group ID for file permissions |
-| UPDATE_ON_START | true            | Set to `false` to skip downloading and validating server files on startup |
-| PORT            | 7777            | UDP port the server listens on |
-| QUERY_PORT      | 27015           | UDP port for Steam server browser queries |
-| SERVER_NAME     | HumanitZ Server | Display name of the server in the server browser |
-| SERVER_PASSWORD |                 | Password required to join. Leave empty for a public server |
-| MAX_PLAYERS     | 16              | Maximum number of players allowed |
+| Variable        | Default | Info |
+|-----------------|---------|------|
+| PUID            | 1000    | User ID for file permissions |
+| PGID            | 1000    | Group ID for file permissions |
+| UPDATE_ON_START | true    | Set to `false` to skip downloading and validating server files on startup |
+| PORT            | 7777    | UDP port the server listens on |
+| QUERY_PORT      | 27015   | UDP port for Steam server browser queries |
 
 > [!NOTE]
-> All other game settings (loot, zombies, PVP, etc.) are configured directly in `server-files/HumanitZServer/GameServerSettings.ini` after the first run.
+> All other game settings (server name, password, max players, loot, zombies, PVP, etc.) are configured directly in `server-files/HumanitZServer/GameServerSettings.ini`.
 
 ## Port Forwarding
 
